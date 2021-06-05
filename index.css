@@ -1,0 +1,263 @@
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  /* footer 
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  */
+  
+  #myFooter {
+      background-color: #3c3d41;
+      color: white;
+      padding-top: 30px;
+  }
+  
+  #myFooter .footer-copyright {
+      background-color: #333333;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      text-align: center;
+  }
+  
+  #myFooter .row {
+      margin-bottom: 30px;
+  }
+  
+  #myFooter .footer-copyright p {
+      margin: 10px;
+      color: #ccc;
+  }
+  
+  #myFooter .social-networks {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 16px;
+  }
+  
+  #myFooter .social-networks a {
+      font-size: 32px;
+      color: #f9f9f9;
+      padding: 10px;
+      transition: 0.2s;
+  }
+  
+  #myFooter .social-networks a:hover {
+      text-decoration: none;
+  }
+  
+  #myFooter .github:hover {
+      color: #000;
+  }
+  
+  #myFooter .instagram:hover {
+      color: purple;
+  }
+  
+  #myFooter .twitter:hover {
+      color: #00aced;
+  }
+  
+  #myFooter .btn {
+      color: white;
+      background-color: #d84b6b;
+      border-radius: 50px;
+      border: none;
+      width: 40px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      line-height: 20px;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1)
+  }
+  
+  #myFooter .btn:hover {
+      color: #df7890;
+      background-color: #d4cbce;
+  }
+  
+  @media screen and (max-width: 767px) {
+      #myFooter {
+          text-align: center;
+      }
+  }
+  /* CSS utilizado para posicionar o rodapé no final da página. */
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  /* geral 
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  */
+  
+  html {
+      height: 100%;
+  }
+  
+  body {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      height: 100%;
+  }
+  
+  .content {
+      flex: 1 0 auto;
+      -webkit-flex: 1 0 auto;
+      min-height: 100px;
+      width: 100%;
+      max-width: 1180px;
+      padding: 0 30px;
+      margin: 32px auto;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1)
+  }
+  
+  .content:hover {
+      color: #d4cbce
+  }
+  
+  #myFooter {
+      flex: 0 0 auto;
+      -webkit-flex: 0 0 auto;
+  }
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  /* container 
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  */
+  
+  .content ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+      list-style: none;
+  }
+  
+  .content ul li {
+      background: rgb(60, 61, 65);
+      padding: 24px;
+      border-radius: 8px;
+      position: relative;
+  }
+  
+  .content ul li .texts {
+      margin-left: 80px;
+  }
+  /* .content ul li button {
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      border: 0;
+      background: transparent;
+  }
+  
+  .content ul li button:hover {
+      opacity: 0.8;
+  } */
+  
+  .content ul li strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #d3d3e0;
+  }
+  /* .content ul li p+strong {
+      margin-top: 32px;
+  } */
+  
+  .content ul li p {
+      color: #d3d3e0;
+      line-height: 10px;
+      font-size: 14px;
+  }
+  
+  .content ul li img {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      position: absolute;
+  }
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  /* header 
+  /* --------------------------------------------------------------
+  /* --------------------------------------------------------------
+  */
+  
+  * {
+      box-sizing: border-box;
+  }
+  
+  .topnav {
+      overflow: hidden;
+      background-color: #3c3d41;
+  }
+  
+  .topnav a {
+      float: left;
+      display: block;
+      color: #ccc;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  
+  .topnav a:hover {
+      background-color: #d84b6b;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .topnav a.active {
+      background-color: #d84b6b;
+      color: white;
+  }
+  
+  .topnav .search-container {
+      float: right;
+  }
+  
+  .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+  }
+  
+  .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+      background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .topnav .search-container {
+          float: none;
+      }
+      .topnav a,
+      .topnav input[type=text],
+      .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+      }
+      .topnav input[type=text] {
+          border: 1px solid #ccc;
+      }
+  }
+  
+  p {
+      font-size: 24px;
+  }
